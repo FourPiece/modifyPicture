@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+	#avatarImg{
+		width: 70px;
+	    height: 70px;
+	    border-radius: 50%;
+	    border : 1px solid #ccc;
+	}
+	#avatarImg:hover{
+		cursor:pointer;
+	}
+</style>
+</head>
+<body >
+	<div id="imgContent">
+		<div>点击图片更换头像</div>
+		<img id="avatarImg" alt="" :src="imgSrc" @click="editAvatar()">
+	</div>
+	
+	<script src="/js/jquery.min.js"></script>
+	<script src="/js/vue.min.js"></script>
+	<!-- 因为我这里使用layer的弹框 -->
+	<script src="/plugins/layer/layer.js"></script>
+	<!-- js -->
+	<script type="text/javascript">
+		var vm = new Vue({
+			el:'#imgContent',
+			data:{
+				imgSrc:'/images/user.jpg'//默认头像
+			},
+			methods:{
+				editAvatar:function(){
+					//打开弹框
+					layer.open({
+						  title:"修改头像",
+						  type: 2,
+						  area: ['700px', '450px'],
+						  fixed: false, //不固定
+						  content: '/userAvatar.html'
+						});
+				},
+				//上传头像回调
+				editAvatarBack:function(){
+					vm.getAvatar();
+				},
+				//获取新头像
+				getAvatar:function(){
+					$.ajax({
+						url: 'getAvatar',
+						type: 'GET',
+						success : function(r){
+							vm.imgSrc = r
+						},
+						error: function(e){}
+					});
+				},
+			}
+		})
+	</script>
+</body>
+</html>
