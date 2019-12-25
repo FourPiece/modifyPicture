@@ -43,7 +43,7 @@ var cropper = new Cropper(image,property);
 
 ### 示例图片
 ![图片](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/9B4C93406E0F4371A61DE0EF282E4F24/2635)  
-![图片2](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/09A147489637497380227BC357B4A2A0/2640)  
+![图片2](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/09A147489637497380227BC357B4A2A0/2640 "裁剪")  
 
 
 
