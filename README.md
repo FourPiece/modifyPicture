@@ -1,6 +1,6 @@
 # 裁剪图片（含部分后台）
 1. 使用 cropper.js 编写的修改图片，截取图片的具体前台操作
-2. 弹出框使用的 [layer]() 的弹出框
+2. 弹出框使用的 [layui](https://www.layui.com/doc/modules/layer.html "跳转到layer弹出框") 的弹出框
 3. 按钮部分使用了 [element UI](https://element.eleme.cn/#/zh-CN/component/installation "element UI 官网") 的按钮 
 
 ## 代码：
@@ -40,8 +40,8 @@ var cropper = new Cropper(image,property);
 不过我这里的后台处理没有存储到数据库中，直接存放到内存中，如果有需要存储数据库，或者服务器上的需求就自行修改啦。
 
 ### 示例图片
-![p1](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/9B4C93406E0F4371A61DE0EF282E4F24/2635)
-![pic](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/09A147489637497380227BC357B4A2A0/2640 "裁剪")  
+![p1](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/9B4C93406E0F4371A61DE0EF282E4F24/2635)  
+![pic](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/09A147489637497380227BC357B4A2A0/2640 "裁剪")    
 
 ![p](https://gitee.com/gitee_fanjunyang/JueJin/raw/master/images/Vue_生命周期函数_1.jpg "图片")
 
