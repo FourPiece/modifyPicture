@@ -16,7 +16,7 @@ public class controller {
 	/**
 	 * 上传图片
 	 * @param base64Data
-	 * @return
+	 * @return 
 	 */
 	@PostMapping("/uploadImg")
 	public int uploadImg(@RequestParam("base64Data") String base64Data) {
@@ -49,7 +49,7 @@ public class controller {
 	 /**
      * 	获取base64格式图片
      * @param imgId
-     * @return
+     * @return 
      */
     @GetMapping("/getAvatar")
     public String findAvatar() {
