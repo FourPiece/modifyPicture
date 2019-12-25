@@ -18,7 +18,7 @@ public class controller {
 	 * @param base64Data
 	 * @return
 	 */
-	@PostMapping("uploadImg")
+	@PostMapping("/uploadImg")
 	public int uploadImg(@RequestParam("base64Data") String base64Data) {
 		//上传失败，图片数据不存在！
 		if("".equals(base64Data)) {
@@ -51,7 +51,7 @@ public class controller {
      * @param imgId
      * @return
      */
-    @GetMapping("getAvatar")
+    @GetMapping("/getAvatar")
     public String findAvatar() {
     	//从数据库或服务器获取图片
     	byte [] imgbytes = img;
