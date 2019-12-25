@@ -1,6 +1,6 @@
 # 裁剪图片（含部分后台）
 1. 使用 cropper.js 编写的修改图片，截取图片的具体前台操作
-2. 弹出框使用的 layer 的弹出框
+2. 弹出框使用的 [layer]() 的弹出框
 3. 按钮部分使用了 [element UI](https://element.eleme.cn/#/zh-CN/component/installation "element UI 官网") 的按钮 
 
 ## 代码：
@@ -27,7 +27,7 @@ var property = {
 	minCropBoxHeight:10
 }
 ```
-avatr.js中'<img id="showImage" src="">' 是用来存储和展示选择的图片的元素    
+avatr.js中'/<img id="showImage" src=""/>' 是用来存储和展示选择的图片的元素    
 
 创建cropper对象
 ```js
@@ -38,7 +38,7 @@ var cropper = new Cropper(image,property);
 定义一个input 用来触发选择图片  
 `var fileInput = $("#imgInput")[0]`
 
-剩下的就是上传图片到后台，我这里使用的是将图片转换成base64传递给后台。
+剩下的就是上传图片到后台，我这里使用的是将图片转换成base64传递给后台。  
 不过我这里的后台处理没有存储到数据库中，直接存放到内存中，如果有需要存储数据库，或者服务器上的需求就自行修改啦。
 
 ### 示例图片
