@@ -41,9 +41,8 @@ var cropper = new Cropper(image,property);
 
 ### 示例图片
 ![p1](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/9B4C93406E0F4371A61DE0EF282E4F24/2635)  
-![pic](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/09A147489637497380227BC357B4A2A0/2640 "裁剪")    
-
-![p](https://gitee.com/gitee_fanjunyang/JueJin/raw/master/images/Vue_生命周期函数_1.jpg "图片")
+![pic](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/09A147489637497380227BC357B4A2A0/2640 "裁剪")   
+![success](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/790AB78FC1A041788FA3739FF2F1D03F/2643 "裁剪上传成功")
 
 
 
