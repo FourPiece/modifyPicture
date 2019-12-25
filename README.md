@@ -27,14 +27,12 @@ var property = {
 	minCropBoxHeight:10
 }
 ```
-avatr.js中'/<img id="showImage" src=""/>' 是用来存储和展示选择的图片的元素    
 
 创建cropper对象
 ```js
 //image 就是存储图片的元素对象
 var cropper = new Cropper(image,property);
 ```
-
 定义一个input 用来触发选择图片  
 `var fileInput = $("#imgInput")[0]`
 
@@ -42,8 +40,8 @@ var cropper = new Cropper(image,property);
 不过我这里的后台处理没有存储到数据库中，直接存放到内存中，如果有需要存储数据库，或者服务器上的需求就自行修改啦。
 
 ### 示例图片
-![图片](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/9B4C93406E0F4371A61DE0EF282E4F24/2635)  
-![图片2](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/09A147489637497380227BC357B4A2A0/2640 "裁剪")  
+![p1](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/9B4C93406E0F4371A61DE0EF282E4F24/2635)
+![pic](https://note.youdao.com/yws/public/resource/88794c411f68a1e039f9311f5df4af61/xmlnote/09A147489637497380227BC357B4A2A0/2640 "裁剪")  
 
 
 
